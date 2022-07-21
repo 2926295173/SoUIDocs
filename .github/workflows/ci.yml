@@ -30,7 +30,7 @@ jobs:
         run: python3.8 ./scripts/docs.py build-all
 
       - name: Deploy to Github Pages
-        uses: JamesIves/github-pages-deploy-action@3.7.1
+        uses: JamesIves/github-pages-deploy-action@v4.4.0
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages # The branch the action should deploy to.
